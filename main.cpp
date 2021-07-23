@@ -3,6 +3,9 @@
 #endif 
 
 #include <windows.h>
+#include "resource.h"
+
+#define IDI_ICON1                       101
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
@@ -15,6 +18,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
     wc.lpfnWndProc   = WindowProc;
     wc.hInstance     = hInstance;
     wc.lpszClassName = CLASS_NAME;
+    wc.hIcon = LoadIcon(hInstance,MAKEINTRESOURCE(IDI_ICON1));
     RegisterClass(&wc);
 
     DWORD dwStyle = WS_BORDER;
