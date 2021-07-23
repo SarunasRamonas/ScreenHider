@@ -2,7 +2,8 @@
 # ScreenHider ![Screenshot](ScreenHiderIco.ico) 
 App to hides additional (second) monitor. Simple as that. It helps when you want to quickly hide second monitor, when your main monitor is on game mode.
 * Language: C++
-* Product: windows-api-win32 (one file)
+* Product: windows-api-win32
+* Product in one file.
 
 ## Run the app
 Execute **Release**/**ScreenHider.exe** application. <br>
