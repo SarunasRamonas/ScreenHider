@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Repositories\Personal\MonitorDisabler\Release\ScreenHider.exe</FullPath>
+      <FullPath>C:\Repositories\Personal\ScreenHider\Release\ScreenHider.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

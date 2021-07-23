@@ -1,1 +1,2 @@
 C:\Repositories\Personal\MonitorDisabler\Release\ScreenHider.exe
+C:\Repositories\Personal\ScreenHider\Release\ScreenHider.exe

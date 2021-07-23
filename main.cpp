@@ -21,21 +21,18 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
     wc.hIcon = LoadIcon(hInstance,MAKEINTRESOURCE(IDI_ICON1));
     RegisterClass(&wc);
 
-    DWORD dwStyle = WS_BORDER;
     // Create the window.
     HWND hwnd = CreateWindowEx(
-        0,                // Optional window styles.
-        CLASS_NAME,                     // Window class
-        0,                              // Window text
-        dwStyle,                        // Window style
-
+        0,
+        CLASS_NAME,
+        0,
+        WS_BORDER,
         // Size and position
         GetSystemMetrics(SM_CXSCREEN), 0, GetSystemMetrics(SM_CXSCREEN), GetSystemMetrics(SM_CYSCREEN),
-
-        NULL,       // Parent window    
-        NULL,       // Menu
-        hInstance,  // Instance handle
-        NULL        // Additional application data
+        NULL,  
+        NULL,
+        hInstance,
+        NULL
         );
 
     if (hwnd == NULL)
