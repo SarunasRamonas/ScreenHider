@@ -68,7 +68,6 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             PAINTSTRUCT ps;
             HDC hdc = BeginPaint(hwnd, &ps);
 
-            // All painting occurs here, between BeginPaint and EndPaint.
             FillRect(hdc, &ps.rcPaint, CreateSolidBrush(0x00000000));
             EndPaint(hwnd, &ps);
             ShowCursor(false);
